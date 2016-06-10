@@ -135,6 +135,14 @@ prediction (red).
    Use rather, if available, the jumps seen in the BAF data for both CNA and BAF data
    (give the BAF jumps file to both `--cna-jumps` and `--baf-jumps`).
 
+#Who is using cloneHD?
+
+Google Scholar lists some of the references where cloneHD has been used by other researchers. We’d like to highlight:
+
+* T Graham, N Wright, W Cross, I Tomlinson, S Leedham, V Mustonen. Progression of colorectal cancer can be initiated through chromosomal catastrophes and punctuated evolution. J. Path. []()
+
+* T McKerrell et al. Development and validation of a comprehensive genomic diagnostic tool for myeloid malignancies. Blood [DOI: 10.1182/blood-2015-11-683334](http://dx.doi.org/10.1182/blood-2015-11-683334).
+
 #How to cite
 
 The cloneHD and filterHD software is free under the GNU General Public License v3.
