@@ -137,11 +137,11 @@ prediction (red).
 
 #Who is using cloneHD?
 
-Google Scholar lists some of the references where cloneHD has been used by other researchers. We’d like to highlight:
-
-* T Graham, N Wright, W Cross, I Tomlinson, S Leedham, V Mustonen. Progression of colorectal cancer can be initiated through chromosomal catastrophes and punctuated evolution. J. Path. []()
+Google Scholar lists some of the references where cloneHD has been used by us and other researchers. We’d like to highlight:
 
 * T McKerrell et al. Development and validation of a comprehensive genomic diagnostic tool for myeloid malignancies. Blood [DOI: 10.1182/blood-2015-11-683334](http://dx.doi.org/10.1182/blood-2015-11-683334).
+
+* I Vázquez-García et al. Background-dependent effects of selection on subclonal heterogeneity. biorXiv [DOI: 10.1101/039859](http://biorxiv.org/content/early/2016/07/27/039859).
 
 #How to cite
 
