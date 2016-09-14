@@ -1,30 +1,35 @@
 # How to get cloneHD and filterHD?
 
-The current stable release, as well as pre-compiled executable binaries 
-for Mac OS X and GNU Linux (64bit), can be found [here](https://github.com/andrej-fischer/cloneHD/releases). The cloneHD software is undergoing rapid development. Watch/Star this repo to receive updates.
+The current stable release, as well as pre-compiled executable binaries for Mac OS X and GNU Linux (64bit), can be found [here](https://github.com/andrej-fischer/cloneHD/releases). Watch/Star this repo to receive updates.
 
 [![Build Status](https://travis-ci.org/ivazquez/cloneHD.svg)](https://travis-ci.org/ivazquez/cloneHD)
+
+# Compilation  
+
+For Mac OSX and GNU Linux (64bit), pre-compiled binaries are available [here](https://github.com/andrej-fischer/cloneHD/releases). To compile cloneHD yourself, you need the GNU scientific library ([GSL](http://www.gnu.org/software/gsl/)) v1.15 or later. Change the paths in the Makefile to point to your local GSL installation (if non-standard). Then type 
+
+	$ make
+
+in the `src` directory. The executables will be in `build`. For debugging with gdb, use `make -f Makefile.debug`.
+
+If you use Mac OSX, cloneHD is also available with Homebrew. This will install cloneHD plus all dependencies:
+
+	$ brew tap homebrew/science
+	$ brew install clonehd
+
+The executables will be automatically added to your path.
 
 # Run a test with simulated data
 
 After downloading cloneHD from the release site, you can test both filterHD and cloneHD by running
 
-`$ sh run-example.sh`
+	$ sh run-example.sh
 
-where you can see a typical workflow of analysing read depth and BAF
-data with a matched normal. All command line arguments are explained below.
-
-# Compilation  
-
-For Mac OS X and GNU Linux (64bit), pre-compiled binaries are available [here](https://github.com/andrej-fischer/cloneHD/releases). To compile cloneHD yourself, you need the GNU scientific library ([GSL](http://www.gnu.org/software/gsl/)) v1.15 or later. Change the paths in the Makefile to point to your local GSL installation (if non-standard). Then type 
-
-`$ make`
-
-in the `src` directory. The executables will be in `build`. For debugging with gdb, use `make -f Makefile.debug`.
+where you can see a typical workflow of analysing read depth and BAF data with a matched normal. All command line arguments are explained below.
 
 # Report bugs
 
-To report bugs, use the [issue](https://github.com/andrej-fischer/cloneHD/issues) interface of github.
+To report bugs, use the [issue](https://github.com/andrej-fischer/cloneHD/issues) interface of GitHub.
 
 # Full documentation
 
@@ -36,18 +41,9 @@ The full documentation can be found in the `/docs/` subfolder. Click below.
 
 # What are cloneHD and filterHD for?
 
-cloneHD is a software for reconstructing the subclonal structure of a
-population from short-read sequencing data. Read depth
-data, B-allele count data and somatic nucleotide variant (SNV) data can be
-used for the inference. cloneHD can estimate the number of subclonal
-populations, their fractions in the sample, their individual total copy number profiles, 
-their B-allele status and all the SNV genotypes with high resolution.
+cloneHD is a software for reconstructing the subclonal structure of a population from short-read sequencing data. Read depth data, B-allele count data and somatic nucleotide variant (SNV) data can be used for the inference. cloneHD can estimate the number of subclonal populations, their fractions in the sample, their individual total copy number profiles, their B-allele status and all the SNV genotypes with high resolution.
 
-filterHD is a general purpose probabilistic filtering algorithm for one-dimensional
-discrete data, similar in spirit to a Kalman filter. It is a continuous state
-space Hidden Markov model with Poisson or Binomial emissions and a
-jump-diffusion propagator. It can be used for scale-free smoothing, 
-fuzzy data segmentation and data filtering. 
+filterHD is a general purpose probabilistic filtering algorithm for one-dimensional discrete data, similar in spirit to a Kalman filter. It is a continuous state space Hidden Markov model with Poisson or Binomial emissions and a jump-diffusion propagator. It can be used for scale-free smoothing, fuzzy data segmentation and data filtering. 
 
 ![cna gof](/images/cna.gof.png "CNA goodness of fit")
 ![baf gof](/images/baf.gof.png "BAF goodness of fit")
@@ -57,8 +53,7 @@ fuzzy data segmentation and data filtering.
 ![baf real](/images/baf.real.png "BAF real profile")
 ![snv gof](/images/snv.gof.png "SNV goodness of fit")
 
-Visualization of the cloneHD output for the simulated data set. From
-top to bottom: 
+Visualization of the cloneHD output for the simulated data set. From top to bottom: 
 (i) The bias corrected read depth data and the cloneHD
 prediction (red).
 (ii) The BAF (B-allele frequency), reflected at 0.5 and the cloneHD prediction (red).

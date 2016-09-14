@@ -1,9 +1,14 @@
 # changelog for cloneHD/filterHD
 
-## v1.17.9 / to come
+## v1.18 / to come
 
-* bug fix for sparse data with singletons in a chr (bug-001)
-	
+* bug fix for sparse data with singletons in a chr (issues #13 and #16)
+
+## v1.17.9 / 18.03.2016
+
+*  removed g++ v4.7 requirement and hard-coded paths to GSL library in Makefile
+*  included a simulated dataset
+
 ## v1.17.8 / 29.05.2014
 
 *  added checks whether files are open for writing
@@ -11,7 +16,7 @@
 *  allowed `--cna-jump -1` and `--baf-jump -1` (no jumps)
 *  `--cna-jumps [baf-jumps-file]` and vice versa enabled (useful for exome data)
 *  jumps read and integrated with new function match_jumps() (not get_track()).
-* fixed bug when chromosomes have no non-zero observations.
+*  fixed bug when chromosomes have no non-zero observations.
 
 ## v1.17.7 / 25.04.2014
 
@@ -43,8 +48,7 @@
 
 ## v1.17.2 / 27.03.2014
 
-*  new output: posterior per subclone, goodness of fit (GOF) per
-   segment
+*  new output: posterior per subclone, goodness of fit (GOF) per segment
 *  changed file name `*clonal.txt` -> `*summary.txt`
 *  filterHD STDOUT includes now GOF per sample
 *  cloneHD `*summary.txt` includes now GOF per sample
@@ -65,15 +69,9 @@
 
 *  if CNA given: SNV prior informed by CNA posterior
 *  if CNA+BAF given, SNV prior informed by BAF+CNA posterior
-*  if SNV only and `--max-tcn` not given, assumes all chr to be
-   all-normal, mean total c.n. to be normal; SNV prior parameters can
-   be learned with `--learn-priors 1`.
-*  if SNV only and `--max-tcn [int/file]` is given, this data is used
-   to fix the total c.n. per chr and subclone; mean total c.n. is
-   calculated on the fly; SNV prior parameters can be learned with
-   `--learn-priors 1`.
-*  if SNV only and `--max-tcn [int/file]` and `--avail-cn [file]` are
-   given, SNV prior is calculated according to c.n. availability.
+*  if SNV only and `--max-tcn` not given, assumes all chr to be all-normal, mean total c.n. to be normal; SNV prior parameters can be learned with `--learn-priors 1`.
+*  if SNV only and `--max-tcn [int/file]` is given, this data is used to fix the total c.n. per chr and subclone; mean total c.n. is calculated on the fly; SNV prior parameters can be learned with `--learn-priors 1`.
+*  if SNV only and `--max-tcn [int/file]` and `--avail-cn [file]` are given, SNV prior is calculated according to c.n. availability.
 
 ### more changes
 
