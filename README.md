@@ -130,15 +130,15 @@ prediction (red).
    Use rather, if available, the jumps seen in the BAF data for both CNA and BAF data
    (give the BAF jumps file to both `--cna-jumps` and `--baf-jumps`).
 
-#Who is using cloneHD?
+# Who is using cloneHD?
 
 Google Scholar lists some of the references where cloneHD has been used by us and other researchers. We’d like to highlight:
 
-* T McKerrell et al. Development and validation of a comprehensive genomic diagnostic tool for myeloid malignancies. Blood [DOI: 10.1182/blood-2015-11-683334](http://dx.doi.org/10.1182/blood-2015-11-683334).
+* T McKerrell et al. Development and validation of a comprehensive genomic diagnostic tool for myeloid malignancies. Blood 128:e1-e9 (2016) [DOI: 10.1182/blood-2015-11-683334](http://doi.org/10.1182/blood-2015-11-683334).
 
-* I Vázquez-García et al. Background-dependent effects of selection on subclonal heterogeneity. biorXiv [DOI: 10.1101/039859](http://biorxiv.org/content/early/2016/07/27/039859).
+* I Vázquez-García et al. Clonal heterogeneity influences the fate of new adaptive mutations. Cell Reports 21 (3), 732-744 (2017) [DOI: 10.1016/j.celrep.2017.09.046](http://doi.org/10.1016/j.celrep.2017.09.046).
 
-#How to cite
+# How to cite
 
 The cloneHD and filterHD software is free under the GNU General Public License v3.
 If you use this software in your work, please cite the accompanying publication:
